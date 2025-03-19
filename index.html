@@ -15,12 +15,12 @@
 
 <p>This module will teach you the basics of how to create your own web pages
 <br>The first couple of lessons are on <b>HTML</b> ,<b>CSS</b> and <b>Javascript.</b>
-<br><br>Name:<br>
-<input><br>
-<button>Submit</button></p>
+<br>
+</p>
 
 <a href = "https://www.w3schools.com/" id = "link" target="_blank">A great resource while you learn is W3Schools</a>
-<p id = "linkCounter">Number of clicks ==> 0</p>
+<p id = "linkCounter">Number of clicks on this page ==> 0</p>
+<a href = "https://tictactoejs.pages.dev" id = "tictactoe" target="_blank">Play tic tac toe!</a>
 
 <script>
 let email_input = setTimeout(function() {prompt("Would you like to subscribe to receive emails? \nIf so, enter your email address here: ",""); } , 5000);
@@ -30,7 +30,13 @@ let clicks = 0;
 document.getElementById("link").addEventListener("pointerdown", () => {
     clicks++;
 
-    document.getElementById("linkCounter").innerHTML = `Number of clicks ==> ${clicks}`;
+    document.getElementById("linkCounter").innerHTML = `Number of clicks on this page ==> ${clicks}`;
+})
+
+document.getElementById("tictactoe").addEventListener("pointerdown", () => {
+    clicks++;
+
+    document.getElementById("linkCounter").innerHTML = `Number of clicks on this page ==> ${clicks}`;
 })
 
 let style1 = document.getElementById("changestyle1").addEventListener("pointerdown", () => {
@@ -46,7 +52,7 @@ let style3 = document.getElementById("changestyle3").addEventListener("pointerdo
 
 <hr>
 </div>
-<img src="HTML.png" alt="HTML">
+<img src="HTML.PNG" alt="HTML">
 <h2>Lesson 1 - HTML</h2>
 <p>
 <h3>Objectives:</h3>
@@ -64,7 +70,7 @@ let style3 = document.getElementById("changestyle3").addEventListener("pointerdo
 </p>
 <br>
 <hr>
-<p><img src="CSS.png" alt="CSS">
+<p><img src="CSS.PNG" alt="CSS">
 <h2>Lesson 2 - CSS</h2>
 <h3>Objectives:</h3>
 <ul>
@@ -81,7 +87,7 @@ let style3 = document.getElementById("changestyle3").addEventListener("pointerdo
 </p>
 <br>
 <hr>
-<img src="JS.png" alt="JS">
+<img src="JS.PNG" alt="JS">
 <h2>Lesson 3 - Javascript</h2>
 <p>
 <h3>Objectives:</h3>
@@ -97,8 +103,23 @@ let style3 = document.getElementById("changestyle3").addEventListener("pointerdo
     <li>Example Javascript code</li>
 </ol>
 </p>
-<br><br><br>
+<br>
+<div id="footer">
+<hr>
+<form>
+    <h1>Contact Mr Carr</h1>
+    <label>Name:</label>
+    <input type="text" id="name"><br><br>
 
-<!-- End your code here -->
+    <label>Email:</label>
+    <input type="email"><br><br>
+
+    <label>Message:</label><br>
+    <textarea rows="4" cols="35"></textarea><br><br>
+
+    <button type="submit"><b>Send</b></button>
+</form>
+<br>
+</div>
 </body>
 </html>
