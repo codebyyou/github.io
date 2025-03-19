@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website Project</title>
+<link id="pagestyle" href="style1.css" rel="stylesheet">
+</head>
+<body>
+
+<div id = "title">
+<h1><u>1.3.4 Web Technologies</u></h1>
+<h2 id="pageLayout">Page Layouts:</h2>
+<button id = "changestyle1" class = "changestyle">Default Site</button>
+<button id = "changestyle2" class = "changestyle">Accessible Site</button>
+<button id = "changestyle3" class = "changestyle">My Design</button>
+
+<p>This module will teach you the basics of how to create your own web pages
+<br>The first couple of lessons are on <b>HTML</b> ,<b>CSS</b> and <b>Javascript.</b>
+<br><br>Name:<br>
+<input><br>
+<button>Submit</button></p>
+
+<a href = "https://www.w3schools.com/" id = "link" target="_blank">A great resource while you learn is W3Schools</a>
+<p id = "linkCounter">Number of clicks ==> 0</p>
+
+<script>
+let email_input = setTimeout(function() {prompt("Would you like to subscribe to receive emails? \nIf so, enter your email address here: ",""); } , 5000);
+
+let clicks = 0;
+
+document.getElementById("link").addEventListener("pointerdown", () => {
+    clicks++;
+
+    document.getElementById("linkCounter").innerHTML = `Number of clicks ==> ${clicks}`;
+})
+
+let style1 = document.getElementById("changestyle1").addEventListener("pointerdown", () => {
+    style1.onclick = document.getElementById("pagestyle").setAttribute("href", "style1.css");
+})
+let style2 = document.getElementById("changestyle2").addEventListener("pointerdown", () => {
+    style2.onclick = document.getElementById("pagestyle").setAttribute("href", "style2.css");
+})
+let style3 = document.getElementById("changestyle3").addEventListener("pointerdown", () => {
+    style3.onclick = document.getElementById("pagestyle").setAttribute("href", "style3.css");
+})
+</script>
+
+<hr>
+</div>
+<img src="HTML.png" alt="HTML">
+<h2>Lesson 1 - HTML</h2>
+<p>
+<h3>Objectives:</h3>
+<ul>
+    <li>Understand what a HTL document is</li>
+    <li>Be able to create HTML documents</li>
+    <li>Be able to use a number of HTML tags, and evaluate what they do</li>
+</ul>
+
+<h3>Outcomes:</h3>
+<ol>
+    <li>HTML tag definitions</li>
+    <li>Example HTML code</li>
+</ol>
+</p>
+<br>
+<hr>
+<p><img src="CSS.png" alt="CSS">
+<h2>Lesson 2 - CSS</h2>
+<h3>Objectives:</h3>
+<ul>
+    <li>Understand what a CSS document is</li>
+    <li>Be able to create CSS documents</li>
+    <li>Be able to use CSS selectors and a number of CSS properties</li>
+</ul>
+
+<h3>Outcomes:</h3>
+<ol>
+    <li>CSS property definitions</li>
+    <li>Example CSS code</li>
+</ol>
+</p>
+<br>
+<hr>
+<img src="JS.png" alt="JS">
+<h2>Lesson 3 - Javascript</h2>
+<p>
+<h3>Objectives:</h3>
+<ul>
+    <li>Understand what a Javascript document is</li>
+    <li>Be able to create Javascript documents</li>
+    <li>Be able to add different interactive elements on your webpage</li>
+</ul>
+
+<h3>Outcomes:</h3>
+<ol>
+    <li>Javascript definitions</li>
+    <li>Example Javascript code</li>
+</ol>
+</p>
+<br><br><br>
+
+<!-- End your code here -->
+</body>
+</html>

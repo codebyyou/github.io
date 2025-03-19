@@ -1,0 +1,118 @@
+body{
+    background-color: black;
+    margin-top: 0px;
+    margin: 0px;
+    font-size: 25px;
+}
+
+p{
+    font-family: Arial;
+    color: yellow;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 25px;
+    color: yellow;
+    font-family: Arial;
+    font-size: 40px;
+}
+
+h2 {
+    color:yellow;
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+h3 {
+    padding-left: 20px;
+    font-family: Arial;
+    color:yellow;
+    font-size: 30px;
+}
+
+ul {
+    padding-left: 75px;
+    font-family: Arial;
+    color:yellow;
+    font-size: 25px;
+}
+
+ol{
+    padding-left: 75px;
+    font-family: Arial;
+    color:yellow;
+    font-size: 25px;
+}
+
+input{
+    width: 250px;
+    height: 20px;
+    background-color: aliceblue;
+    font-size: large;
+}
+
+button{
+    font-family: Arial;
+    font-size: large;
+    background-color: lightblue;
+    border-style: solid;
+    border-width: 1px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+
+img{
+    float:right;
+    width:250px;
+    height:400px;
+    background-color: white;
+}
+
+#title{
+    background-color: rgba(0, 66, 0, 0.75);
+    color: black;
+    text-align: center;
+}
+
+#changestyle1{
+    position: absolute;
+    left: 0%;
+    top: 125px;
+}
+
+#changestyle2{
+    position: absolute;
+    left: 0%;
+    top: 200px;
+    background-color: orangered
+}
+
+#changestyle3{
+    position: absolute;
+    left: 0%;
+    top: 275px;
+}
+
+.changestyle{
+    background-color: yellow;
+    width: 150px;
+    height: 50px;
+    border-style: hidden;
+}
+
+#pageLayout{
+    position: absolute;
+    left: 0%;
+    top: 50px;
+    color: yellow;
+    font-size: 25px;
+}
+
+a:visited{
+    color: red;
+}
