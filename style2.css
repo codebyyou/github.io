@@ -59,6 +59,8 @@ button{
     background-color: lightblue;
     border-style: solid;
     border-width: 1px;
+    height: 30px;
+    width: 60px;
 }
 
 button:hover{
@@ -82,20 +84,20 @@ img{
 #changestyle1{
     position: absolute;
     left: 0%;
-    top: 125px;
+    top: 70px;
 }
 
 #changestyle2{
     position: absolute;
     left: 0%;
-    top: 200px;
+    top: 145px;
     background-color: orangered
 }
 
 #changestyle3{
     position: absolute;
     left: 0%;
-    top: 275px;
+    top: 220px;
 }
 
 .changestyle{
@@ -108,11 +110,23 @@ img{
 #pageLayout{
     position: absolute;
     left: 0%;
-    top: 50px;
+    top: 0px;
     color: yellow;
     font-size: 25px;
 }
 
 a:visited{
     color: red;
+}
+
+#footer{
+    background-color: #17161a;
+    text-align: center;
+    color:yellow;
+}
+
+#tictactoe{
+    position: absolute;
+    top: 20px;
+    left: 90%;
 }
