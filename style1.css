@@ -39,9 +39,9 @@ ol{
 input{
     width: 250px;
     height: 20px;
-    background-color: aliceblue;
+    background-color: white;
     font-size: large;
-    border-style:double;
+    border-style:none;
     color:seagreen;
 }
 
@@ -50,6 +50,8 @@ button{
     background-color: lightblue;
     border-style: solid;
     border-width: 1px;
+    height: 30px;
+    width: 60px;
 }
 
 button:hover{
@@ -63,6 +65,15 @@ img{
     height:225px;
 }
 
+a{
+    font-family: Franklin Gothic Medium;
+}
+
+label{
+    color:white;
+    font-family: Verdana;
+}
+
 #title{
     background-color: rgba(0, 66, 0, 0.75);
     color: aliceblue;
@@ -72,20 +83,20 @@ img{
 #changestyle1{
     position: absolute;
     left: 0%;
-    top: 100px;
+    top: 60px;
     background-color: #69aeb3;
 }
 
 #changestyle2{
     position: absolute;
     left: 0%;
-    top: 140px;
+    top: 100px;
 }
 
 #changestyle3{
     position: absolute;
     left: 0%;
-    top: 180px;
+    top: 140px;
 }
 
 .changestyle{
@@ -98,7 +109,23 @@ img{
 #pageLayout{
     position: absolute;
     left: 0%;
-    top: 50px;
+    top: 20px;
     color: white;
     font-size: 15px;
+}
+
+#footer{
+    background-color: #28262d;
+    text-align: center;
+    color:white;
+}
+
+#tictactoe{
+    position: absolute;
+    top: 20px;
+    left: 90%;
+}
+
+a:visited{
+    color: rgb(183, 97, 183);
 }
