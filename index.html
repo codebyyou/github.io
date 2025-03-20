@@ -39,6 +39,12 @@ document.getElementById("tictactoe").addEventListener("pointerdown", () => {
 
     document.getElementById("linkCounter").innerHTML = `Number of clicks on this page ==> ${clicks}`;
 })
+   
+document.getElementById("game").addEventListener("pointerdown", () => {
+    clicks++;
+
+    document.getElementById("linkCounter").innerHTML = `Number of clicks on this page ==> ${clicks}`;
+})
 
 let style1 = document.getElementById("changestyle1").addEventListener("pointerdown", () => {
     style1.onclick = document.getElementById("pagestyle").setAttribute("href", "style1.css");
