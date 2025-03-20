@@ -126,6 +126,12 @@ label{
     left: 90%;
 }
 
+#3dgame{
+    position: absolute;
+    top: 40px;
+    left: 90%;
+}
+
 a:visited{
     color: rgb(183, 97, 183);
 }
