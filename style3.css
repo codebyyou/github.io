@@ -27,6 +27,7 @@ h3 {
     font-family: Impact;
 }
 
+
 ul {
     padding-left: 100px;
     font-family: Impact;
@@ -111,5 +112,11 @@ a:visited{
 #tictactoe{
     position: absolute;
     top: 20px;
+    left: 90%;
+}
+
+#game{
+    position: absolute;
+    top: 40px;
     left: 90%;
 }
