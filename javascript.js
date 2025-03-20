@@ -1,4 +1,4 @@
-let email_input = setTimeout(function() {prompt("Would you like to subscribe to receive emails? \nIf so, enter your email address here: ",""); } , 5000);
+//let email_input = setTimeout(function() {prompt("Would you like to subscribe to receive emails? \nIf so, enter your email address here: ",""); } , 5000);
 let clicks = 0;
 
 document.getElementById("link").addEventListener("pointerdown", () => {
@@ -29,24 +29,15 @@ let style3 = document.getElementById("changestyle3").addEventListener("pointerdo
     style3.onclick = document.getElementById("pagestyle").setAttribute("href", "style3.css");
 })
 
-const username = document.getElementById('name').value;
-const email = document.getElementById('email').value;
-const message = document.getElementById('message').value;
-const send = document.getElementById('send');
 
-send.addEventListener("submit", (event) => {
-
+function showAlert(event){
+    
     event.preventDefault();
+    alert("Email sent successfully!");
+    document.getElementById('name').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('message').value = "";
 
-    if (username === "" || email === "" || message === "") {
-        alert("Please fill out all fields before submitting.");
-        // send.disabled = true;
-    }
-    else{
-        // send.disabled = false;
-        username, email, message = "";
-    }
-
-})
+}
 
 
