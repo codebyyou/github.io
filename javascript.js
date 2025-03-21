@@ -81,7 +81,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     let name = document.getElementById('name').value;
 
-    const nameRegex = /^[A-Za-z]+$/;
+    const nameRegex = /^[A-Za-z\s]+$/;
 
     if (!nameRegex.test(name)) {
         alert('Please enter a valid name containing only alphabetic characters.');
