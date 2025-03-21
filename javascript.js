@@ -33,7 +33,7 @@ function showAlert(event){
     event.preventDefault();
     alert("Email sent successfully!");
     document.getElementById('name').value = "";
-    document.getElementById('email').value = email_input;
+    document.getElementById('email').value = "";
     document.getElementById('message').value = "";
 
 }
