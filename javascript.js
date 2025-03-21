@@ -33,8 +33,10 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     let templateParams = {
         name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+        email: "dmarsden19@agsb.co.uk",
+        website: window.location.href
       };
 
     let name = document.getElementById('name').value;
@@ -52,7 +54,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
                 alert('Failed to send email: ' + error.text);
             });
             document.getElementById('name').value = "";
-            document.getElementById('email').value = "";
+            document.getElementById('subject').value = "";
             document.getElementById('message').value = "";
             
     }
