@@ -68,41 +68,68 @@ button:hover{
     background-color: orangered;
 }
 
+.images{
+    float:right;
+    width:175px;
+    height:225px;
+    padding-right: 20px;
+    padding-top: 100px;
+}
+
+#sidebar{
+    height: 100%;
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.main{
+    padding: 0px;
+    background-color: black;
+    color: yellow;
+    text-align: left;
+}
+
 img{
     float:right;
     width:250px;
     height:400px;
-    background-color: white;
 }
 
 #title{
     background-color: rgba(0, 66, 0, 0.75);
     color: black;
     text-align: center;
+    padding-left: 160px;
 }
 
 #changestyle1{
     position: absolute;
-    left: 0%;
+    left: 0px;
     top: 70px;
 }
 
 #changestyle2{
     position: absolute;
-    left: 0%;
+    left: 0px;
     top: 145px;
     background-color: orangered
 }
 
 #changestyle3{
     position: absolute;
-    left: 0%;
+    left: 0p;
     top: 220px;
 }
 
 .changestyle{
     background-color: yellow;
-    width: 150px;
+    width: 160px;
     height: 50px;
     border-style: hidden;
 }
@@ -112,29 +139,67 @@ img{
     left: 0%;
     top: 0px;
     color: yellow;
-    font-size: 25px;
+    font-size: 20px;
+    padding-left: 8px;
 }
 
 a:visited{
     color: red;
 }
 
+#others{
+    position: absolute;
+    left: 10px;
+    bottom: 220px;
+    color: yellow;
+    font-size: 18px;
+    padding-left: 0px;
+}
+
+.onenotelinks{
+    padding-left: 60px;
+}
+
 #footer{
     background-color: #17161a;
     text-align: center;
     color:yellow;
+    padding-left: 160px;
 }
 
 #tictactoe{
     position: absolute;
-    top: 0px;
-    right:0px;
-    height:144px;
+    bottom: 108px;
+    left: 0px;
+    height: 108px;
+    width: 160px;
 }
 
 #game{
     position: absolute;
-    top: 144px;
-    right:0px;
-    height:144px;
+    bottom: 0px;
+    left: 0px;
+    height: 108px;
+    width: 160px;
+}
+
+img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+img.animateout {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#linkCounter{
+    position:absolute;
+    bottom: 300px;
+    font-family: verdana;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 5px;
+    padding: 15px;
 }

@@ -56,11 +56,37 @@ button:hover{
     background-color: navajowhite
 }
 
+.images{
+    float:right;
+    width:175px;
+    height:225px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+#sidebar{
+    height: 100%;
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: yellow;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.main{
+    padding: 0px;
+    background-color: orchid;
+    color: purple;
+    text-align: left;
+}
+
 img{
     float:right;
     width:200px;
-    height:300px;
-    background-color: grey;
+    height:300px
 }
 
 a:visited{
@@ -72,52 +98,89 @@ a:visited{
     color: red;
     text-align: center;
     text-shadow: yellow;
-    
+    padding-left: 160px;
 }
 
 #changestyle1{
     position: absolute;
-    left: 10px;
+    left: 30px;
     top: 50px;
 }
 
 #changestyle2{
     position: absolute;
-    left: 120px;
-    top: 50px;
+    left: 30px;
+    top: 160px;
 }
 
 #changestyle3{
     position: absolute;
-    left: 230px;
-    top: 50px;
+    left: 30px;
+    top: 270px;
     background-color: darkturquoise;
 }
 
 #pageLayout{
     position: absolute;
-    left: 0px;
+    left: 26px;
     top: 0px;
     color: white;
     font-size: 20px;
 }
 
 #footer{
-    background-color: #28262d;
+    background-color: orange;
     text-align: center;
     color:white;
+    padding-left: 160px;
 }
 
 #tictactoe{
     position: absolute;
-    top: 0px;
-    right:0px;
-    height:104px;
+    bottom: 108px;
+    left: 0px;
+    height: 108px;
+    width: 160px;
 }
 
 #game{
     position: absolute;
-    top: 104px;
-    right:0px;
-    height:104px;
+    bottom: 0px;
+    left: 0px;
+    height: 108px;
+    width: 160px;
+}
+
+img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+img.animateout {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#others{
+    position: absolute;
+    left: 10px;
+    bottom: 220px;
+    color: navy;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.onenotelinks{
+    padding-left: 60px;
+}
+
+#linkCounter{
+    position:absolute;
+    bottom: 270px;
+    font-family: impact;
+    text-align: center;
+    background-color: palegreen;
+    border-radius: 15px;
+    margin-left: 30px;
+    padding: 15px;
 }
