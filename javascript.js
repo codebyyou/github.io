@@ -1,23 +1,21 @@
-//let email_input = setTimeout(function() {prompt("Would you like to subscribe to receive emails? \nIf so, enter your email address here: ",""); } , 5000);
+let email_input = setTimeout(function() {prompt("Would you like to subscribe to receive emails? \nIf so, enter your email address here: ",""); } , 5000);
 let clicks = 0;
 
-document.getElementById("link").addEventListener("pointerdown", () => {
-    clicks++;
 
-    document.getElementById("linkCounter").innerHTML = `Number of clicks on this page ==> ${clicks}`;
-})
+let alist  =document.querySelectorAll("a");
+console.log(alist)
 
-document.getElementById("tictactoe").addEventListener("pointerdown", () => {
-    clicks++;
+for (let i = 0; i < alist.length; i ++) {
 
-    document.getElementById("linkCounter").innerHTML = `Number of clicks on this page ==> ${clicks}`;
-})
+    alist[i].addEventListener("pointerdown", () => {
 
-document.getElementById("game").addEventListener("pointerdown", () => {
-    clicks++;
+        clicks++
 
-    document.getElementById("linkCounter").innerHTML = `Number of clicks on this page ==> ${clicks}`;
-})
+        document.getElementById("linkCounter").innerHTML = `Number of clicks on this page ==> ${clicks}`;
+
+    })
+
+}
 
 let style1 = document.getElementById("changestyle1").addEventListener("pointerdown", () => {
     style1.onclick = document.getElementById("pagestyle").setAttribute("href", "style1.css");
