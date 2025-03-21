@@ -42,7 +42,6 @@ input{
     background-color: white;
     font-size: large;
     border-style:none;
-    color:seagreen;
 }
 
 button{
@@ -136,4 +135,8 @@ label{
 
 a:visited{
     color: rgb(183, 97, 183);
+}
+
+.onenotelinks{
+    padding-left: 60px;
 }
